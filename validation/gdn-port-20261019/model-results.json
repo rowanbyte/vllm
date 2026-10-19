@@ -1,0 +1,240 @@
+{
+  "scope": "Exact upstream solver overlay on pinned MetaX e434d79 engine, not a complete current-upstream runtime build or official benchmark accuracy",
+  "questions": [
+    {
+      "name": "arithmetic",
+      "prompt_tokens": 28,
+      "baseline_text": "42",
+      "candidate_text": "42",
+      "baseline_tokens": [
+        19,
+        17,
+        248046
+      ],
+      "candidate_tokens": [
+        19,
+        17,
+        248046
+      ],
+      "exact_token_match": true,
+      "finish_reasons": [
+        "stop",
+        "stop"
+      ],
+      "expected": "42",
+      "baseline_answer_matches": true,
+      "candidate_answer_matches": true
+    },
+    {
+      "name": "capital",
+      "prompt_tokens": 26,
+      "baseline_text": "Paris",
+      "candidate_text": "Paris",
+      "baseline_tokens": [
+        57590,
+        248046
+      ],
+      "candidate_tokens": [
+        57590,
+        248046
+      ],
+      "exact_token_match": true,
+      "finish_reasons": [
+        "stop",
+        "stop"
+      ],
+      "expected": "Paris",
+      "baseline_answer_matches": true,
+      "candidate_answer_matches": true
+    },
+    {
+      "name": "multiplication",
+      "prompt_tokens": 26,
+      "baseline_text": "56",
+      "candidate_text": "56",
+      "baseline_tokens": [
+        20,
+        21,
+        248046
+      ],
+      "candidate_tokens": [
+        20,
+        21,
+        248046
+      ],
+      "exact_token_match": true,
+      "finish_reasons": [
+        "stop",
+        "stop"
+      ],
+      "expected": "56",
+      "baseline_answer_matches": true,
+      "candidate_answer_matches": true
+    },
+    {
+      "name": "sequence",
+      "prompt_tokens": 36,
+      "baseline_text": "10",
+      "candidate_text": "10",
+      "baseline_tokens": [
+        16,
+        15,
+        248046
+      ],
+      "candidate_tokens": [
+        16,
+        15,
+        248046
+      ],
+      "exact_token_match": true,
+      "finish_reasons": [
+        "stop",
+        "stop"
+      ],
+      "expected": "10",
+      "baseline_answer_matches": true,
+      "candidate_answer_matches": true
+    },
+    {
+      "name": "json",
+      "prompt_tokens": 28,
+      "baseline_text": "{\"answer\": 42}",
+      "candidate_text": "{\"answer\": 42}",
+      "baseline_tokens": [
+        4754,
+        8944,
+        763,
+        220,
+        19,
+        17,
+        92,
+        248046
+      ],
+      "candidate_tokens": [
+        4754,
+        8944,
+        763,
+        220,
+        19,
+        17,
+        92,
+        248046
+      ],
+      "exact_token_match": true,
+      "finish_reasons": [
+        "stop",
+        "stop"
+      ],
+      "expected": null,
+      "baseline_answer_matches": true,
+      "candidate_answer_matches": true
+    },
+    {
+      "name": "chinese",
+      "prompt_tokens": 22,
+      "baseline_text": "北京",
+      "candidate_text": "北京",
+      "baseline_tokens": [
+        98116,
+        248046
+      ],
+      "candidate_tokens": [
+        98116,
+        248046
+      ],
+      "exact_token_match": true,
+      "finish_reasons": [
+        "stop",
+        "stop"
+      ],
+      "expected": "北京",
+      "baseline_answer_matches": true,
+      "candidate_answer_matches": true
+    },
+    {
+      "name": "long_128",
+      "prompt_tokens": 1316,
+      "baseline_text": "42",
+      "candidate_text": "42",
+      "baseline_tokens": [
+        19,
+        17,
+        248046
+      ],
+      "candidate_tokens": [
+        19,
+        17,
+        248046
+      ],
+      "exact_token_match": true,
+      "finish_reasons": [
+        "stop",
+        "stop"
+      ],
+      "expected": "42",
+      "baseline_answer_matches": true,
+      "candidate_answer_matches": true
+    },
+    {
+      "name": "long_512",
+      "prompt_tokens": 5156,
+      "baseline_text": "42",
+      "candidate_text": "42",
+      "baseline_tokens": [
+        19,
+        17,
+        248046
+      ],
+      "candidate_tokens": [
+        19,
+        17,
+        248046
+      ],
+      "exact_token_match": true,
+      "finish_reasons": [
+        "stop",
+        "stop"
+      ],
+      "expected": "42",
+      "baseline_answer_matches": true,
+      "candidate_answer_matches": true
+    }
+  ],
+  "variants": {
+    "baseline": {
+      "identity": [
+        {
+          "source_sha256": "0922ecd9738e5b40bfdf7718eb6e36ab9bed1c0b1ff5fdbc01a881e770af84ef",
+          "enabled": false,
+          "torch": "2.10.0+metax3.8.0.7"
+        }
+      ],
+      "execution": [
+        {
+          "calls": 210,
+          "eligible_calls": 210,
+          "enabled": false
+        }
+      ]
+    },
+    "candidate": {
+      "identity": [
+        {
+          "source_sha256": "0922ecd9738e5b40bfdf7718eb6e36ab9bed1c0b1ff5fdbc01a881e770af84ef",
+          "enabled": true,
+          "torch": "2.10.0+metax3.8.0.7"
+        }
+      ],
+      "execution": [
+        {
+          "calls": 210,
+          "eligible_calls": 210,
+          "enabled": true
+        }
+      ]
+    }
+  },
+  "all_token_sequences_match": true,
+  "candidate_exercised": true,
+  "elapsed_s": 69.41608309745789
+}

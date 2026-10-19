@@ -1,0 +1,66 @@
+{
+  "candidate_commit": "be22e9878d7c47459bc860ac771895d4d610d4cf",
+  "solver_sha256": "0922ecd9738e5b40bfdf7718eb6e36ab9bed1c0b1ff5fdbc01a881e770af84ef",
+  "kernel_tests": {
+    "passed": 13,
+    "includes_changed_length_graph_replay": true,
+    "elapsed_s": 2.63
+  },
+  "event_benchmark": {
+    "device": "MetaX C550",
+    "timing": "event",
+    "results": [
+      {
+        "length": 1072,
+        "samples_ms": {
+          "baseline": [
+            0.11172096252441406,
+            0.11115519523620605,
+            0.11155712127685546,
+            0.11111424446105957,
+            0.11160063743591309
+          ],
+          "candidate": [
+            0.0759603214263916,
+            0.07347968101501465,
+            0.07584767818450927,
+            0.07330560207366943,
+            0.07576064109802245
+          ]
+        },
+        "baseline_median_ms": 0.11155712127685546,
+        "candidate_median_ms": 0.07576064109802245,
+        "latency_reduction_percent": 32.0880278812462
+      },
+      {
+        "length": 3216,
+        "samples_ms": {
+          "baseline": [
+            0.3327334213256836,
+            0.3295539093017578,
+            0.3304217529296875,
+            0.32947967529296873,
+            0.3301683044433594
+          ],
+          "candidate": [
+            0.16965631484985352,
+            0.16812799453735353,
+            0.16969728469848633,
+            0.16784128189086914,
+            0.16959232330322266
+          ]
+        },
+        "baseline_median_ms": 0.3301683044433594,
+        "candidate_median_ms": 0.16959232330322266,
+        "latency_reduction_percent": 48.634583931627404
+      }
+    ]
+  },
+  "scope": "Exact solver source overlay with the pinned MetaX FLA dependencies; not a full current-upstream runtime build. Event benchmarks ran with other workers resident.",
+  "environment": {
+    "GPU": "MetaX C550",
+    "torch": "2.10.0+metax3.8.0.7",
+    "python": "3.10.10",
+    "triton": "3.6.0"
+  }
+}
