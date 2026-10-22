@@ -1,0 +1,48 @@
+{
+  "pr": {
+    "url": "https://github.com/vllm-project/vllm/pull/63094",
+    "head": "9027363e6641fb211526c20ae005251eb3d2f45d",
+    "base": "b3b0bc30590748b859af89832ccc50482dc9b08e",
+    "tree": "3a35aa6997628bfac9d061bdb9950c07e43db735",
+    "tracked_source_modified": false
+  },
+  "environment": {
+    "python": "3.12.3",
+    "torch": "2.14.0+cu130",
+    "torch_cuda": "13.0",
+    "triton": "3.8.0",
+    "cxx11_abi": true,
+    "cudnn_version": 92400,
+    "native_dispatch": "ApplyRotaryEmb.forward_cuda",
+    "binary_source_commit": "b3b0bc30590748b859af89832ccc50482dc9b08e",
+    "binary_wheel_sha256": "cf7256de60b000d85fdb2507c904a02be52f4d5c47da8bb34298798e482c1d05",
+    "installation": "task-local venv with read-only inherited dependencies; kernel-validation subset, not full serving installation",
+    "pip_check_clean": false
+  },
+  "source_sha256": {
+    "tests/kernels/core/test_fused_vision_qk_rope.py": "e61f3bb955f96da323d19429fa773189a7ccb3303926e5f2096955d8cf46df07",
+    "vllm/model_executor/layers/rotary_embedding/fused_vision_qk_rope.py": "b114f245c8e8111202bf158098c7ad8d36913e4f0cc0221661814a490e3012ee",
+    "vllm/model_executor/models/qwen2_5_vl.py": "9c6787048280ee3d9a019b197a1d4efec07abc5051000395950857745c2fe662"
+  },
+  "original_benchmark_sha256": "ad6f330cca6d2e39d9a0870748e010749385e4b5ae41d319d9233cc81840fb7f",
+  "unchanged_function_ast": {
+    "native": true,
+    "optimized": true,
+    "summary": true,
+    "measure": true,
+    "mem_peak": true
+  },
+  "packaging": "Portable CLI paths/head guard and removal of device/private-path metadata only; scripts here were syntax/style checked on CPU, not rerun on GPU. Measurements were made with the original harness.",
+  "evidence_archive_sha256": "c3a993a0c55d206c9743dfd823141b355c4a3b4bb30251666778646c08a8d213",
+  "portable_scripts_sha256": {
+    "benchmark.py": "54e84bd33653b9f05ac2e36c9afb1a2c57ffa5775606159b2e7fb08f894b0767",
+    "check_wide_index.py": "7ecd3f0c8eebe1b13591bface1504427b92725bf56b807dc9c994572be173ceb"
+  },
+  "cpu_checks": [
+    "Python compile",
+    "argparse --help (before GPU imports)",
+    "Ruff E/F/I (E501/E402 ignored; F821 module-global cleanup suppression documented)",
+    "Ruff format",
+    "unchanged numerical and measurement function AST"
+  ]
+}
